@@ -21,7 +21,8 @@ body {
     height: 77px;
     padding: 0 6vw 0 3vw;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: fixed;
+    position: absolute;
+    top: 0;
     width: 100%;
     z-index: 10;
 }
@@ -134,11 +135,18 @@ body {
         margin-bottom: -205px;
 
     }
+    
 }
+
 
 /* 
 
 */
+@media screen and (min-width:1024px) {
+    .top-header{
+        position: fixed;
+    }
+}
 #home-hero p {
     width: 50vw;
     text-align: center;
@@ -220,7 +228,7 @@ body {
 .arrow-container {
     padding: 10px 8px 10px 11px;
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     transform: scale(0.8);
     height: 54px;
     border-radius: 18px;
@@ -301,8 +309,8 @@ body {
 .project-card {
     max-width: 700px;
     max-height: 500px;
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 300px;
+    min-height: 200px;
     margin: 20px auto;
     /* border: 2px solid;
     border-radius: 10px;
@@ -422,8 +430,9 @@ align-items: center;
 width: 32px;
 padding: 5px 10px;
 position: fixed;
-right: 2%;
+right: 4%;
 bottom: 5%;
 cursor: pointer;
 border: none;
+z-index: 11;
 }
