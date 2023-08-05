@@ -292,8 +292,8 @@ body {
     max-width: 700px;
     max-height: 500px;
     min-width: 400px;
-    min-height: 200px;
-
+    min-height: 300px;
+    margin: 20px auto;
     /* border: 2px solid;
     border-radius: 10px;
     position: relative;
@@ -307,19 +307,13 @@ body {
     position: relative;
 }
 
-.projects-container,
-.projects-container-2 {
+.projects-container {
     margin: 45px auto;
-    gap: 120px;
+    /* gap: 120px; */
     display: flex;
     /* justify-content: center; */
 }
 
-.projects-container-2 {
-    /* margin: 195px auto; */
-    margin: 25px auto;
-    flex-direction: row-reverse;
-}
 
 .project-card img {
     width: 100%;
@@ -328,6 +322,7 @@ body {
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
 }
 
 
@@ -396,4 +391,11 @@ body {
 }
 .row{
     margin-right: 0;
+}
+.pr-card-body{
+
+color: var(--bg-skills);
+padding: 15px;
+padding-top: 20px;
+
 }
