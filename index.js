@@ -29,6 +29,9 @@ $(".change-theme").on("click", () => {
         $(".top-header").addClass("dark-header")
 
         $(".links").addClass("dark-links")
+
+        $(".skill-container").css("backgroundColor","#61677A")
+        $(".skill-container .skill-text").addClass("white-text")
         
         $(".arrow img").attr("src",frecciaBianca)
         // const root = document.documentElement;
@@ -49,6 +52,9 @@ $(".change-theme").on("click", () => {
         $(".links").removeClass("dark-links")
 
         $(".arrow img").attr("src",frecciaNera)
+
+        $(".skill-container").css("backgroundColor","#e7e7e7")
+        $(".skill-container .skill-text").removeClass("white-text")
         
     }
 })

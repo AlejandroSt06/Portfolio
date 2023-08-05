@@ -23,7 +23,7 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .logo {
@@ -106,23 +106,30 @@ body {
     background-color: var(--action-color);
 }
 
-#home-hero,
-#About-me,
-#projects {
-    position: absolute;
+ #home-hero,#About-me,#projects
+{
+    
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #home-hero {
 
-    position: absolute;
-    top: 0;
+    
+    padding: 250px;
     gap: 25px;
     z-index: -1;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
+@media screen and (max-width:1080px) {
+    #home-hero {
 
+    
+        padding: 170px;
+        margin-bottom: -205px;
+
+    }
+}
 
 #home-hero p {
     width: 50vw;
@@ -130,9 +137,9 @@ body {
     font-size: 20px;
 }
 
-#About-me {
+/* #About-me {
     top: 100vh;
-}
+} */
 
 .hero-button {
 
@@ -205,7 +212,7 @@ body {
 .arrow-container {
     padding: 10px 8px 10px 11px;
     position: absolute;
-    bottom: 50px;
+    bottom: 5%;
     transform: scale(0.8);
     height: 54px;
     border-radius: 18px;
@@ -276,20 +283,28 @@ body {
     /* color:#F0DB4F ; */
 }
 
-#projects {
+/* #projects {
 
     top: 200vh
-}
+} */
 
 .project-card {
-    max-width: 300px;
-    max-height: 300px;
-    min-width: 300px;
-    min-height: 300px;
-    border: 2px solid;
+    max-width: 700px;
+    max-height: 500px;
+    min-width: 400px;
+    min-height: 200px;
+
+    /* border: 2px solid;
     border-radius: 10px;
     position: relative;
-
+    /* background: url("https://picsum.photos/200"); */
+    /* object-fit: cover; */
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .projects-container,
@@ -297,13 +312,42 @@ body {
     margin: 45px auto;
     gap: 120px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .projects-container-2 {
     /* margin: 195px auto; */
     margin: 25px auto;
     flex-direction: row-reverse;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.pr-card-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--action-color);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-card:hover .pr-card-body {
+    
+    opacity: 1;
+}
+.project-card:hover img {
+    transform: scale(1.2);
+    /* Applica uno zoom del 20% sull'immagine al passaggio del mouse */
 }
 
 /* .projects-container .col:nth-child(2){
@@ -326,10 +370,11 @@ body {
     background-color: #272829;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    */color: var(--bg-skills); 
-   /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;" */
-   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    
+    */
+    color: var(--bg-skills);
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;" */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
     backdrop-filter: blur(2px);
 }
 
@@ -341,6 +386,14 @@ body {
     color: #FFF6E0;
 }
 
-.dark-links{
-background-color: #61677A;
+.dark-links {
+    background-color: #61677A;
+}
+
+.white-text {
+    background-image: linear-gradient(108deg, #FFF6E0, #FFF6E0);
+    /* color: #FFF6E0; */
+}
+.row{
+    margin-right: 0;
 }
