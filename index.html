@@ -46,7 +46,7 @@
             success of the overall product</p>
         <button class="hero-button" onclick="window.location.href='#projects';">Projects</button>
 
-        <div class="links position-absolute">
+        <div class="links position-absolute d-none d-md-block">
             <div class="link-container"><a href="www.linkedin.com/in/mirko-saavedra-52b04b27b" target="_blank"><img
                         src="images/linkedin.png" alt="" width="32px" loading="lazy"></a></div>
             <div class="link-container"><a href="https://github.com/AlejandroSt06" target="_blank"><img
@@ -58,7 +58,7 @@
         <div class="arrow-container d-none d-lg-block">
             <div class="arrow"><img src="images/right-arrow.png" alt="" width="16px"></div>
         </div>
-        <div class="go-up"></div>
+        <button class="go-up d-none"><a href="#home-hero"><img src="images/blue-up.png" alt="" width="100%"></a></button>
     </section>
 
 
@@ -67,9 +67,10 @@
         <div class="divider"></div>
         <p class="text-center  w-50 mt-3 mb-5">Here you will find more information about me, what I do, and my current
             skills mostly in terms of programming and technology</p>
-        <div class="container">
-            <div class="about-container row g-5 flex-column flex-lg-row">
-                <div class="know-me col">
+            <!--about container-->
+        <div class="container mt-2">
+            <div class="about-container row g-5 flex-column flex-lg-row align-content-center justify-content-center">
+                <div class="know-me col col-lg-5">
                     <h3 class="mb-4 fw-bold">Conoscimi!</h3>
                     <p>
                         Ciao! I am a passionate <span class="evidenziato">Front End Web Developer</span> from Genoa,
@@ -91,7 +92,7 @@
                     <button class="about-button">Contact me</button>
                 </div>
 
-                <div class="skills col">
+                <div class="skills col col-lg-5 ms-5">
                     <h3 class="mb-5 ms-2 fw-bold">My Skills</h3>
                     <div class="container g-0">
                         <div class="row g-lg-4">
@@ -116,7 +117,7 @@
                                 <p class="skill-text">Responsive Design</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row ">
                             <div class="skill-container col-2">
                                 <p class="skill-text ">GIT</p>
                             </div>

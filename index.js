@@ -8,6 +8,13 @@ $(document).ready(function () {
         width = Math.min(width, 100);
         progressBarEl.css("width", width + "%");
 
+        //Freccia go-up 
+        if(width != 0) {
+            $(".go-up").removeClass("d-none")
+        }
+        else{
+            $(".go-up").addClass("d-none")
+        }
     });
 });
 
