@@ -24,19 +24,31 @@
                 alt="profile-photo">
             <h2>Mirko Saavedra</h2>
         </a>
-        <nav class="header-nav d-none d-lg-block">
-            <ul class="no-underline-list">
+        <button class="nav-button d-lg-none" onclick="navBlock()"><img class = "ham-button" src="images/hamburgher-icon.png" alt="" width="20"></button>
+        <nav class="header-nav d-flex flex-column flex-md-row">
+            
+            <ul class="no-underline-list d-none d-md-flex">
 
-                <li><a href="#home-hero" class="no-link">Home</a></li>
+                <li class=""><a href="#home-hero" class="no-link">Home</a></li>
                 <li><a href="#About-me" class="no-link">About</a></li>
                 <li><a href="#projects" class="no-link">Project</a></li>
                 <li><a href="" class="no-link">Contact</a></li>
 
             </ul>
-            <div class="change-theme d-none d-md-block"><img src="images/moon.png" alt=""></div>
+            <!--vertical menu-->
+            <ul class="no-underline-list flex-column d-md-none">
+
+                <li class=""><a href="#home-hero" class="no-link">Home</a></li>
+                <li><a href="#About-me" class="no-link">About</a></li>
+                <li><a href="#projects" class="no-link">Project</a></li>
+                <li><a href="" class="no-link">Contact</a></li>
+
+            </ul>
+            <div class="change-theme"><img src="images/moon.png" alt=""></div>
         </nav>
 
         <div id="progress-bar"></div>
+        
     </header>
 
     <section id="home-hero" class="d-flex flex-column align-items-center justify-content-center">
@@ -102,18 +114,18 @@
                             <div class="skill-container col-3">
                                 <p class="skill-text">CSS</p>
                             </div>
-                            <div class="skill-container col-3">
+                            <div class="skill-container col-4">
                                 <p class="skill-text">Javascript</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="skill-container col-3">
+                            <div class="skill-container col-4 col-sm-3">
                                 <p class="skill-text ">Bootstrap</p>
                             </div>
-                            <div class="skill-container col-2">
+                            <div class="skill-container col-3">
                                 <p class="skill-text">jquery</p>
                             </div>
-                            <div class="skill-container col-5">
+                            <div class="skill-container col-6 col-sm-5 col-md-5">
                                 <p class="skill-text">Responsive Design</p>
                             </div>
                         </div>
@@ -127,7 +139,7 @@
                             <div class="skill-container col-3">
                                 <p class="skill-text">Node.js</p>
                             </div>
-                            <div class="skill-container col-4">
+                            <div class="skill-container col-6 col-sm-4">
                                 <p class="skill-text">Express Basics</p>
                             </div>
                         </div>

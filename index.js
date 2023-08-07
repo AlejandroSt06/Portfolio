@@ -26,6 +26,7 @@ $(".change-theme").on("click", () => {
     const frecciaBianca = "images/right-arrow-white.png"
     const frecciaNera = "images/right-arrow.png"
 
+    const hamburgherButton = "images/hamburger (1).png"
     if (state === true) {
 
         state = false;
@@ -41,6 +42,11 @@ $(".change-theme").on("click", () => {
         $(".skill-container .skill-text").addClass("white-text")
         
         $(".arrow img").attr("src",frecciaBianca)
+
+        $(".mobile-nav-bar").css("backgroundColor","#272829")
+
+        $(".nav-button").css("backgroundColor","#272829")
+        $(".nav-button img").attr("src",hamburgherButton)
         // const root = document.documentElement;
 
         // Cambia il valore della variabile --colore-di-sfondo
@@ -62,6 +68,33 @@ $(".change-theme").on("click", () => {
 
         $(".skill-container").css("backgroundColor","#e7e7e7")
         $(".skill-container .skill-text").removeClass("white-text")
+
+        $(".mobile-nav-bar").css("backgroundColor","white")
+        $(".nav-button").css("backgroundColor","white")
+        $(".nav-button img").attr("src","images/hamburgher-icon.png")
+        
         
     }
 })
+
+var statoMenu = false;
+function navBlock(){
+$(".nav-button").on("click",()=>{
+if(statoMenu === false){
+
+    
+
+    $(".header-nav ul:nth-child(2)").css("display","block")
+    $(".header-nav").addClass("mobile-nav-bar")
+    $(".change-theme").css("display", "block")
+    statoMenu = true;
+}
+else if(statoMenu === true){
+    $(".header-nav ul:nth-child(2)").css("display","none")
+    $(".header-nav").removeClass("mobile-nav-bar")
+    $(".change-theme").css("display", "none")
+    statoMenu = false;}
+})
+
+
+}
