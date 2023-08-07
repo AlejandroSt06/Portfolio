@@ -165,13 +165,17 @@ body {
 /* 
 
 */
+.mobile-nav-bar{
+    display: block;
+    border-bottom: 3px solid var(--action-color);
+}
 @media screen and (min-width:1024px) {
     .top-header{
         position: fixed;
     }
     .mobile-nav-bar{
-        display: block;
-        border-bottom: none;
+        display: none;
+        border-bottom: 0px solid white;
     }
 }
 #home-hero p {
@@ -464,10 +468,7 @@ border: none;
 z-index: 11;
 }
 
-.mobile-nav-bar{
-    display: block;
-    border-bottom: 3px solid var(--action-color);
-}
+
 
 .nav-button{
     border: none;
