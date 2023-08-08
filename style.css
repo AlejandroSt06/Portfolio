@@ -145,6 +145,7 @@ body {
         display: none;
         border-bottom: 0px solid white;
     }
+
 }
 #home-hero p {
     width: 50vw;
@@ -328,6 +329,7 @@ body {
     margin: 45px auto;
     /* gap: 120px; */
     display: flex;
+    width: 65%;
     /* justify-content: center; */
 }
 
