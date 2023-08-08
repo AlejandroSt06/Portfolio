@@ -82,16 +82,13 @@ body {
 }
 
 .change-theme {
-    display: none;
+    
     position: absolute;
     right: 55px;
     top: 23px
 }
 
-.change-theme button {
-    border: none;
 
-}
 
 .change-theme img {
     border: none;
@@ -459,7 +456,9 @@ z-index: 11;
     outline: none;
     border-radius: 8px;
 }
-
+#contact-form{
+    margin: 100px 0;
+}
 
 
 @media screen and (max-width:1080px) {
@@ -490,6 +489,7 @@ z-index: 11;
         margin: 10px;
     }
     .change-theme{
+        display: none;
         top: 20px;
         right: 30px;
     }

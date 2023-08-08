@@ -22,7 +22,7 @@
             <img class="logo-image"
                 src="https://fiverr-res.cloudinary.com/image/upload/t_profile_original,q_auto,f_auto/v1/attachments/profile/photo/0ab402d4ef8e57735109827e2e743d56-1148571891690655731186/JPEG_20230729_203528_7470754212594444527.jpg"
                 alt="profile-photo">
-            <h2>Mirko Saavedra</h2>
+            <h2 class="mt-0">Mirko Saavedra</h2>
         </a>
         <button class="nav-button d-lg-none" onclick="navBlock()"><img class="ham-button"
                 src="images/hamburgher-icon.png" alt="" width="20"></button>
@@ -33,7 +33,7 @@
                 <li class=""><a href="#home-hero" class="no-link">Home</a></li>
                 <li><a href="#About-me" class="no-link">About</a></li>
                 <li><a href="#projects" class="no-link">Project</a></li>
-                <li><a href="" class="no-link">Contact</a></li>
+                <li><a href="#contact-form" class="no-link">Contact</a></li>
 
             </ul>
             <!--vertical menu-->
@@ -178,8 +178,7 @@
                         onclick="window.open('https://vigilant-winner-gold.vercel.app/', '_blank')">
                         <div class="pr-card-body d-flex flex-column align-items-center justify-content-center g-3">
                             <h3 class="text-center">Memory-game</h3>
-                            <p class="text-center">Memory game is a classic card-matching game where players flip over
-                                cards to find matching pairs. The objective is to test and improve memory skills by
+                            <p class="text-center"> The objective of Memory is to test and improve memory skills by
                                 remembering the positions of cards on the board</p>
 
                         </div>
@@ -228,14 +227,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="container flex-row">
-        <div class="row  projects-container projects-container-2">
-            <div class="col project-card"></div>
-            <div class="col project-card"></div>
-            <div class="col project-card"></div>
-        </div>
-        
-            </div> -->
+ 
     </section>
 
     <section id="contact-form">
@@ -274,7 +266,8 @@
             var email = document.getElementById("email").value
             var subject= document.getElementById("subject").value
 
-            var body = "name: " + name + "email: " + email + "messagge: " + subject;
+            // 
+            
             Email.send({
                 SecureToken: "6ae1cb25-f51f-43dd-a493-89ae69225602",
                 To: 'mirkosaavedra596@gmail.com',
@@ -288,7 +281,7 @@
 
 
 
-            alert("cia"+ body)
+        
         })
     </script>
 
