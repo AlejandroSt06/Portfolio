@@ -128,38 +128,9 @@ body {
 /* 
 
 */
-@media screen and (max-width:1080px) {
-    #home-hero {
 
 
-        padding: 170px;
-        margin-bottom: -205px;
 
-    }
-    .header-nav{
-       position: absolute;
-       top: 75px;
-       background-color: #f2f3f2;
-       width: 100%;
-       
-       left: 0;
-       
-    }
-    .header-nav ul{
-        width: 100%;
-        align-items: center;
-        justify-content:center;
-        display: none;
-    }
-    .header-nav ul li{
-        text-align: left;
-        margin: 10px;
-    }
-    .change-theme{
-        top: 20px;
-        right: 30px;
-    }
-}
 
 
 /* 
@@ -476,4 +447,53 @@ z-index: 11;
 .nav-button{
     padding: 0;
     background-color: white;
+}
+/* Contact Form */
+
+.form-inputs{
+    width: 60%;
+}
+.form-inputs input,.form-inputs textarea{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+
+
+@media screen and (max-width:1080px) {
+    #home-hero {
+
+
+        padding: 170px;
+        margin-bottom: -205px;
+
+    }
+    .header-nav{
+       position: absolute;
+       top: 75px;
+       background-color: #f2f3f2;
+       width: 100%;
+       
+       left: 0;
+       
+    }
+    .header-nav ul{
+        width: 100%;
+        align-items: center;
+        justify-content:center;
+        display: none;
+    }
+    .header-nav ul li{
+        text-align: left;
+        margin: 10px;
+    }
+    .change-theme{
+        top: 20px;
+        right: 30px;
+    }
+    .form-inputs{
+        width: 80%;
+    }
 }
