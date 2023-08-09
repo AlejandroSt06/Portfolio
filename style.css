@@ -415,6 +415,8 @@ z-index: 11;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    align-items: start;
 }
 
 .gallery {
@@ -443,7 +445,7 @@ z-index: 11;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 
 }
 
