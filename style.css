@@ -306,75 +306,10 @@ body {
     top: 200vh
 } */
 
-.project-card {
-    max-width: 700px;
-    max-height: 500px;
-    min-width: 300px;
-    min-height: 200px;
-    margin: 20px auto;
-    /* border: 2px solid;
-    border-radius: 10px;
-    position: relative;
-    /* background: url("https://picsum.photos/200"); */
-    /* object-fit: cover; */
-    padding: 0;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.projects-container {
-    margin: 45px auto;
-    /* gap: 120px; */
-    display: flex;
-    width: 65%;
-    /* justify-content: center; */
-}
 
 
-.project-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-}
 
 
-.pr-card-body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--action-color);
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.project-card:hover .pr-card-body {
-
-    opacity: 1;
-}
-
-.project-card:hover img {
-    transform: scale(1.2);
-    /* Applica uno zoom del 20% sull'immagine al passaggio del mouse */
-}
-
-/* .projects-container .col:nth-child(2){
-    margin: 100px 0;
-    top:100px;
-
-} */
-/* .projects-container .col:nth-child(3){
-    margin: 200px 0;
-    top:200px;
-
-} */
 
 .dark {
     background-color: #272829;
@@ -461,6 +396,79 @@ z-index: 11;
 #contact-form{
     margin: 100px 0;
 }
+
+
+.project-card {
+    max-width: 700px;
+    max-height: 500px;
+    min-width: 300px;
+    min-height: 300px;  
+    /* margin: 20px auto; */
+    /* border: 2px solid;
+    border-radius: 10px;
+    position: relative;
+    /* background: url("https://picsum.photos/200"); */
+     object-fit: cover;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 115px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+
+  
+  /* .gallery::after {
+    content: "";
+    
+  } */
+
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+.pr-card-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--action-color);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-card:hover .pr-card-body {
+
+    opacity: 1;
+}
+
+.project-card:hover img {
+    transform: scale(1.2);
+    /* Applica uno zoom del 20% sull'immagine al passaggio del mouse */
+}
+
+
 
 
 @media screen and (max-width:1080px) {
