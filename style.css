@@ -11,6 +11,7 @@ body {
     /* --action-color:#512B81; */
     --action-color: #4477CE;
     --bg-skills: #e7e7e7;
+    --hover-color:#8CABFF;
 }
 
 .top-header {
@@ -166,11 +167,12 @@ body {
     border: none;
     transition: all 0.5s ease-in-out;
     font-size: 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .hero-button:hover,
 .about-button:hover {
-    transform: translateY(-5px);
+   background-color: var(--hover-color);
 }
 
 .hero-header {
@@ -202,21 +204,24 @@ body {
 
 .arrow {
 
-    transform: rotate(90deg);
-    animation: go-down 0.6s linear infinite;
+    transform: scaleY(2);
+    animation: go-down 0.8s linear infinite;
 
 
 }
 
 @keyframes go-down {
-    from {
-        transform: rotate(90deg) translateX(-13px);
+    0% {
+        transform:  translateY(-10px);
         opacity: 0.1;
     }
-
-    to {
-        transform: rotate(90deg) translateX(10px);
+    50%{
+     transform:  translateY(6px);
         opacity: 1;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0.1;
     }
 
 }
@@ -226,13 +231,16 @@ body {
 }
 
 .arrow-container {
-    padding: 10px 8px 10px 11px;
+    padding: 2px 0;
     position: absolute;
     bottom: 3%;
     transform: scale(0.8);
     height: 54px;
     border-radius: 18px;
     border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .divider {
@@ -333,7 +341,7 @@ body {
 }
 
 .dark-header a h2 {
-    color: #FFF6E0;
+    color: var(--bg-skills);
 }
 
 .dark-links {
@@ -341,7 +349,7 @@ body {
 }
 
 .white-text {
-    background-image: linear-gradient(108deg, #FFF6E0, #FFF6E0);
+    background-image: linear-gradient(108deg, var(--bg-skills), var(--bg-skills));
     /* color: #FFF6E0; */
 }
 
@@ -358,15 +366,15 @@ body {
 
 }
 .go-up{
-background-color: white;
+background-color: transparent;
 border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 32px;
+width: 45px;
 padding: 5px 10px;
 position: fixed;
-right: 4%;
+right: 3%;
 bottom: 5%;
 cursor: pointer;
 border: none;
@@ -495,7 +503,10 @@ z-index: 11;
     text-align: left;
     margin: 10px;
 }
-
+.go-up{
+    bottom: 12%;
+    right: 3%;
+}
 }
 @media screen and (max-width:1080px) {
     #home-hero {

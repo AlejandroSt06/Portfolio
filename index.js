@@ -23,8 +23,8 @@ $(".change-theme").on("click", () => {
 
     const sole = "images/sun-1.png";
     const luna = "images/moon.png";
-    const frecciaBianca = "images/right-arrow-white.png"
-    const frecciaNera = "images/right-arrow.png"
+    const frecciaBianca = "SVGs/arrow-up-svgrepo-com-white.svg"
+    const frecciaNera = "SVGs/arrow-up-svgrepo-com.svg"
 
     const hamburgherButton = "images/hamburger (1).png"
     if (state === true) {
