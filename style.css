@@ -528,10 +528,6 @@ z-index: 11;
     .row{
         width: 95%;
 margin: auto;    }
-.project-card{
-    min-height: 155px;
-    max-height: 250px; 
-}
 .project-card img{
     min-height: 205px; 
 }
